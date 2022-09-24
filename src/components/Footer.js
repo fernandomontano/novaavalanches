@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="bg-indigo-200 rounded p-8">
+    <div className="bg-indigo-200/40 rounded p-8">
       <div className="flex justify-between mb-5">
         <div className="text-md">
           <div className="text-xl font-bold">Sobre nosotros</div>
@@ -17,7 +17,7 @@ export default function Footer() {
         </div>
         <div>
           <div className="text-xl font-bold">Contacto</div>
-          <div className="bg-purple-800/30 rounded p-2 mt-4 ">
+          <div className="bg-purple-800/40 rounded p-2 mt-4 ">
             <a
               type="button"
               className="font-bold"
