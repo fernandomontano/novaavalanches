@@ -5,7 +5,7 @@ import "./Font.css";
 export default function SignUp() {
   return (
     <div>
-      <div className="flex flex-wrap text-center justify-center items-center my-[2.5rem]">
+      <div className="flex flex-wrap text-center justify-center items-center mb-10">
         <div className="mb-2">
           <div className="font-extrabold text-transparent text-3xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">
             Datos
@@ -17,7 +17,7 @@ export default function SignUp() {
           <div>ocurrirá algún desastre cercano a su zona.</div>
         </div>
         <div className="bg-slate-300/20 rounded ml-8">
-          <div className="pb-12 px-8 py-8">
+          <div className="pb-4 px-8 py-4">
             <form>
               <label className="block font-bold">Correo</label>
               <input
@@ -25,7 +25,7 @@ export default function SignUp() {
                 id="Correo"
                 name="Correo electronico"
                 placeholder="Introduce acá tu correo"
-                className="p-2 rounded my-3 mb-4"
+                className="p-2 rounded my-3 mb-2"
               />
               <label className="block font-bold">Teléfono</label>
               <input
@@ -33,10 +33,18 @@ export default function SignUp() {
                 id="Telefono"
                 name="Telefono"
                 placeholder="Introduce acá tu número"
-                className="p-2 rounded mt-2 block"
+                className="p-2 rounded mt-1 block"
+              />
+              <label className="block font-bold">Zona</label>
+              <input
+                type="text"
+                id="Zona"
+                name="Zona"
+                placeholder="Introduce tu ubicación"
+                className="p-2 rounded mt-1 block"
               />
               <button type="submit" className="font-bold text-center w-full">
-                <div className="bg-cyan-800/30 rounded p-4 hover:bg-purple-200 hover:scale-110 transition ease-in-out delay-150 mt-4 cursor-pointer">
+                <div className="bg-cyan-800/30 rounded p-3 hover:bg-purple-200 hover:scale-110 transition ease-in-out delay-150 mt-4 cursor-pointer">
                   Ingresar
                 </div>
               </button>
