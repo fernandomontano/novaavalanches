@@ -13,8 +13,8 @@ import Footer from "./Footer";
 export default function Information() {
   return (
     <div>
-      <div className="flex justify-around my-14 bg-slate-400/20 px-8 rounded big-wrapper no-padding">
-        <div className="pb-12 px-8">
+      <div className="flex justify-around my-14 bg-slate-400/20 px-8 no-padding rounded big-wrapper no-padding">
+        <div className="pb-12 px-8 no-padding">
           <div className="text-6xl font-bold leading-normal pt-8 pb-4 ">
             <div>¿Quieres mantenerte </div>
             <div>
@@ -34,7 +34,7 @@ export default function Information() {
           </div>
           <div className="flex mt-6 items-center text-xl buttons">
             <div className="bg-purple-800/30 rounded p-4 hover:bg-purple-200 hover:scale-110 transition ease-in-out delay-150">
-              <Link to="/signup" class="font-bold">
+              <Link to="/signup" className="font-bold">
                 Registra tus datos
               </Link>
             </div>
@@ -90,7 +90,7 @@ export default function Information() {
           alt="mud"
           className="rounded mr-5 w-2/3 h-80 shown"
         />
-        <div className="absolute top-1/2 left-1/2 text-white font-bold text-xl translate ">
+        <div className="absolute top-1/2 left-1/2 text-white font-bold text-xl translate text-size">
           <span className="text-6xl text-size">
             "Siempre intentando llegar más allá de los límites..."
           </span>

@@ -12,18 +12,26 @@
   .shown {
     display: block;
   }
-}
-/* @media (max-width: 600px) {
-  .no-padding {
-    padding: 0 0rem;
-  }
   .text-size {
     font-size: 2rem;
   }
-  * {
-    margin: 0 0;
+}
+@media (max-width: 620px) {
+  .footer-wrap {
+    flex-wrap: wrap;
   }
-} */
+  .space-wrap {
+    margin: 1rem 0;
+  }
+  .no-padding {
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 440px) {
+  .text-size {
+    font-size: 1rem;
+  }
+}
 @media (max-width: 1220px) {
   .img1 {
     display: none;
