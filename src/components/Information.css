@@ -9,7 +9,21 @@
     align-items: center;
     justify-content: center;
   }
+  .shown {
+    display: block;
+  }
 }
+/* @media (max-width: 600px) {
+  .no-padding {
+    padding: 0 0rem;
+  }
+  .text-size {
+    font-size: 2rem;
+  }
+  * {
+    margin: 0 0;
+  }
+} */
 @media (max-width: 1220px) {
   .img1 {
     display: none;

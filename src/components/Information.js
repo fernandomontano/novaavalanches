@@ -7,11 +7,13 @@ import {
   LightBulbIcon,
   PencilIcon,
 } from "@heroicons/react/24/solid";
+import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 export default function Information() {
   return (
     <div>
-      <div className="flex justify-around my-14 bg-slate-400/20 px-8 rounded big-wrapper">
+      <div className="flex justify-around my-14 bg-slate-400/20 px-8 rounded big-wrapper no-padding">
         <div className="pb-12 px-8">
           <div className="text-6xl font-bold leading-normal pt-8 pb-4 ">
             <div>¿Quieres mantenerte </div>
@@ -32,11 +34,11 @@ export default function Information() {
           </div>
           <div className="flex mt-6 items-center text-xl buttons">
             <div className="bg-purple-800/30 rounded p-4 hover:bg-purple-200 hover:scale-110 transition ease-in-out delay-150">
-              <button type="button" class="font-bold">
+              <Link to="/signup" class="font-bold">
                 Registra tus datos
-              </button>
+              </Link>
             </div>
-            <div class="flex items-center font-bold cursor-pointer">
+            <div className="flex items-center font-bold cursor-pointer">
               <ExclamationCircleIcon className="h-6 w-6 text-slate-800 ml-12" />
               <div className="ml-2">Sobre nosotros</div>
             </div>
@@ -45,12 +47,12 @@ export default function Information() {
         <img
           src="https://source.unsplash.com/HX9hgul7GkU"
           alt="mud"
-          className="rounded h-80 ml-10 mt-40 img1"
+          className="rounded h-80 ml-10 mt-40 img1 dissapear"
         />
         <img
           src="https://source.unsplash.com/gbV0o0I7Hzk"
           alt="mud"
-          className="rounded h-80 ml-12 mt-12 mr-5"
+          className="rounded h-80 ml-12 mt-12 mr-5 z"
         />
       </div>
       <div>
@@ -58,7 +60,7 @@ export default function Information() {
           TE OFRECEMOS
         </div>
       </div>
-      <div className="flex justify-around items-center">
+      <div className="flex justify-around items-center flex-wrap">
         <div className="flex flex-col justify-center items-center">
           <ShieldExclamationIcon className="h-12 w-12 text-black mb-2" />
           <div className="font-bold text-xl mt-2">Protección</div>
@@ -86,15 +88,16 @@ export default function Information() {
         <img
           src="https://source.unsplash.com/_nm_mZ4Cs2I"
           alt="mud"
-          className="rounded mr-5 w-2/3 h-80"
+          className="rounded mr-5 w-2/3 h-80 shown"
         />
-        <div className="absolute top-1/2 left-1/2 text-white font-bold text-xl translate">
-          <span className="text-6xl">
+        <div className="absolute top-1/2 left-1/2 text-white font-bold text-xl translate ">
+          <span className="text-6xl text-size">
             "Siempre intentando llegar más allá de los límites..."
           </span>
           - Andrea Turcios
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
