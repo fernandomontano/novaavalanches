@@ -1,8 +1,9 @@
 import React from "react";
+import "./Font.css";
 
 export default function Footer() {
   return (
-    <div className="bg-indigo-200/40 rounded p-8">
+    <div className="bg-indigo-200/40 rounded p-8 text-center">
       <div className="flex justify-between mb-5 footer-wrap">
         <div className="text-md space-wrap">
           <div className="text-xl font-bold">Sobre nosotros</div>

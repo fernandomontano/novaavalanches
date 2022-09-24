@@ -1,5 +1,6 @@
 import React from "react";
 import "./Information.css";
+import "./Font.css";
 import {
   ExclamationCircleIcon,
   ShieldExclamationIcon,
